@@ -31,7 +31,7 @@ app.post('/upload', photosMiddleware.array('photos', 100), (req, res) => {
         uploadFiles.push(newPath.replace('uploads/', ''));
     }
     res.json(uploadFiles);
-}).h
+})
 
 app.get('/',(req,res)=>{
     res.json("Hello World")
